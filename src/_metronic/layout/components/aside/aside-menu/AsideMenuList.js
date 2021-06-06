@@ -44,9 +44,8 @@ export function AsideMenuList({ layoutProps }) {
           </NavLink>
         </li>
        
-        {/*end::1 Level*/}
 
-        {/*begin::1 Level*/}
+
         <li
           className={`menu-item ${getMenuItemActive("/comment", false)}`}
           aria-haspopup="true"
@@ -58,7 +57,219 @@ export function AsideMenuList({ layoutProps }) {
             <span className="menu-text">Comment</span>
           </NavLink>
         </li>
+
+
+        <li
+          className={`menu-item ${getMenuItemActive("/user", false)}`}
+          aria-haspopup="true"
+        >
+          <NavLink className="menu-link" to="/user">
+            <span className="svg-icon menu-icon">
+              <SVG src={toAbsoluteUrl("/media/svg/icons/Home/Library.svg")} />
+            </span>
+            <span className="menu-text">User</span>
+          </NavLink>
+        </li>
+
+
+       
+        <li
+          className={`menu-item menu-item-submenu ${getMenuItemActive(
+            "/google-material",
+            true
+          )}`}
+          aria-haspopup="true"
+          data-menu-toggle="hover"
+        >
+          <NavLink className="menu-link menu-toggle" to="/google-material">
+            <span className="svg-icon menu-icon">
+              <SVG src={toAbsoluteUrl("/media/svg/icons/Design/Cap-2.svg")} />
+            </span>
+            <span className="menu-text">Category</span>
+            <i className="menu-arrow" />
+          </NavLink>
+          <div className="menu-submenu ">
+            <i className="menu-arrow" />
+            <ul className="menu-subnav">
+              <li className="menu-item  menu-item-parent" aria-haspopup="true">
+                <span className="menu-link">
+                  <span className="menu-text">Category</span>
+                </span>
+              </li>
+
+
+              {/* Inputs */}
+              {/*begin::2 Level*/}
+              <li
+                className={`menu-item menu-item-submenu ${getMenuItemActive(
+                  "/google-material/inputs",
+                  true
+                )}`}
+                aria-haspopup="true"
+                data-menu-toggle="hover"
+              >
+                <NavLink
+                  className="menu-link menu-toggle"
+                  to="/google-material/inputs"
+                >
+                  <i className="menu-bullet menu-bullet-dot">
+                    <span />
+                  </i>
+                  <span className="menu-text">Inputs</span>
+                  <i className="menu-arrow" />
+                </NavLink>
+                <div className="menu-submenu ">
+                  <i className="menu-arrow" />
+                  <ul className="menu-subnav">
+                  
+                    {/*begin::3 Level*/}
+                    <li
+                      className={`menu-item ${getMenuItemActive(
+                        "/google-material/inputs/checkboxes"
+                      )}`}
+                      aria-haspopup="true"
+                    >
+                      <NavLink
+                        className="menu-link"
+                        to="/google-material/inputs/checkboxes"
+                      >
+                        <i className="menu-bullet menu-bullet-dot">
+                          <span />
+                        </i>
+                        <span className="menu-text">Checkboxes</span>
+                      </NavLink>
+                    </li>
+                    {/*end::3 Level*/}
+
+                    {/*begin::3 Level*/}
+                    <li
+                      className={`menu-item ${getMenuItemActive(
+                        "/google-material/inputs/pickers"
+                      )}`}
+                      aria-haspopup="true"
+                    >
+                      <NavLink
+                        className="menu-link"
+                        to="/google-material/inputs/pickers"
+                      >
+                        <i className="menu-bullet menu-bullet-dot">
+                          <span />
+                        </i>
+                        <span className="menu-text">Pickers</span>
+                      </NavLink>
+                    </li>
+                    {/*end::3 Level*/}
+
+                    {/*begin::3 Level*/}
+                    <li
+                      className={`menu-item ${getMenuItemActive(
+                        "/google-material/inputs/radio-buttons"
+                      )}`}
+                      aria-haspopup="true"
+                    >
+                      <NavLink
+                        className="menu-link"
+                        to="/google-material/inputs/radio-buttons"
+                      >
+                        <i className="menu-bullet menu-bullet-dot">
+                          <span />
+                        </i>
+                        <span className="menu-text">Radio Buttons</span>
+                      </NavLink>
+                    </li>
+                    {/*end::3 Level*/}
+
+                    {/*begin::3 Level*/}
+                    <li
+                      className={`menu-item ${getMenuItemActive(
+                        "/google-material/inputs/selects"
+                      )}`}
+                      aria-haspopup="true"
+                    >
+                      <NavLink
+                        className="menu-link"
+                        to="/google-material/inputs/selects"
+                      >
+                        <i className="menu-bullet menu-bullet-dot">
+                          <span />
+                        </i>
+                        <span className="menu-text">Selects</span>
+                      </NavLink>
+                    </li>
+                    {/*end::3 Level*/}
+
+                    {/*begin::3 Level*/}
+                    <li
+                      className={`menu-item ${getMenuItemActive(
+                        "/google-material/inputs/switches"
+                      )}`}
+                      aria-haspopup="true"
+                    >
+                      <NavLink
+                        className="menu-link"
+                        to="/google-material/inputs/switches"
+                      >
+                        <i className="menu-bullet menu-bullet-dot">
+                          <span />
+                        </i>
+                        <span className="menu-text">Switches</span>
+                      </NavLink>
+                    </li>
+                    {/*end::3 Level*/}
+
+                    {/*begin::3 Level*/}
+                    <li
+                      className={`menu-item ${getMenuItemActive(
+                        "/google-material/inputs/text-fields"
+                      )}`}
+                      aria-haspopup="true"
+                    >
+                      <NavLink
+                        className="menu-link"
+                        to="/google-material/inputs/text-fields"
+                      >
+                        <i className="menu-bullet menu-bullet-dot">
+                          <span />
+                        </i>
+                        <span className="menu-text">Text Fields</span>
+                      </NavLink>
+                    </li>
+                    {/*end::3 Level*/}
+
+                    {/*begin::3 Level*/}
+                    <li
+                      className={`menu-item ${getMenuItemActive(
+                        "/google-material/inputs/transfer-list"
+                      )}`}
+                      aria-haspopup="true"
+                    >
+                      <NavLink
+                        className="menu-link"
+                        to="/google-material/inputs/transfer-list"
+                      >
+                        <i className="menu-bullet menu-bullet-dot">
+                          <span />
+                        </i>
+                        <span className="menu-text">Transfer List</span>
+                      </NavLink>
+                    </li>
+                    {/*end::3 Level*/}
+                  </ul>
+                </div>
+              </li>
+            
+             
+            </ul>
+          </div>
+        </li>
+        
         {/*end::1 Level*/}
+
+        {/*begin::1 Level*/}
+      
+        {/*end::1 Level*/}
+
+
 
         {/* Components */}
         {/* begin::section */}
@@ -70,6 +281,7 @@ export function AsideMenuList({ layoutProps }) {
 
         {/* Material-UI */}
         {/*begin::1 Level*/}
+
         <li
           className={`menu-item menu-item-submenu ${getMenuItemActive(
             "/google-material",
@@ -1121,6 +1333,7 @@ export function AsideMenuList({ layoutProps }) {
             </ul>
           </div>
         </li>
+        
         {/*end::1 Level*/}
 
         {/* Bootstrap */}
