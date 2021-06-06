@@ -386,7 +386,6 @@ export function AsideMenuList({ layoutProps }) {
                 </span>
               </li>
 
-
  {/*Pages child1::3 Level*/}
                 <li
                       className={`menu-item ${getMenuItemActive(
