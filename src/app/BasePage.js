@@ -4,6 +4,10 @@ import { LayoutSplashScreen, ContentRoute } from "../_metronic/layout";
 import { RatingPage } from "./pages/RatingPage";
 import { CommentPage } from "./pages/CommentPage";
 import { UserPage } from "./pages/UserPage";
+import { CategoryListPage } from "./pages/CategoryListPage";
+import { AddCategoryPage } from "./pages/AddCategoryPage";
+
+
 
 
 import { MyPage } from "./pages/MyPage";
@@ -39,6 +43,10 @@ export default function BasePage() {
         <ContentRoute path="/rating" component={RatingPage} />
         <ContentRoute path="/comment" component={CommentPage} />
         <ContentRoute path="/user" component={UserPage} />
+        <ContentRoute path="/category/categorylist" component={CategoryListPage} />
+        <ContentRoute path="/category/addcategory" component={AddCategoryPage} />
+
+
 
 
         <ContentRoute path="/my-page" component={MyPage} />

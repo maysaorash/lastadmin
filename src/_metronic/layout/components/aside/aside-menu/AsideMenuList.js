@@ -79,13 +79,13 @@ export function AsideMenuList({ layoutProps }) {
        
         <li
           className={`menu-item menu-item-submenu ${getMenuItemActive(
-            "/google-material",
+            "/category",
             true
           )}`}
           aria-haspopup="true"
           data-menu-toggle="hover"
         >
-          <NavLink className="menu-link menu-toggle" to="/google-material">
+          <NavLink className="menu-link menu-toggle" to="/category">
             <span className="svg-icon menu-icon">
               <SVG src={toAbsoluteUrl("/media/svg/icons/Design/Cap-2.svg")} />
             </span>
@@ -105,13 +105,13 @@ export function AsideMenuList({ layoutProps }) {
  {/*Category child1::3 Level*/}
                 <li
                       className={`menu-item ${getMenuItemActive(
-                        "/google-material/inputs/checkboxes"
+                        "/category/addcategory"
                       )}`}
                       aria-haspopup="true"
                     >
                       <NavLink
                         className="menu-link"
-                        to="/google-material/inputs/checkboxes"
+                        to="/category/addcategory"
                       >
                         <i className="menu-bullet menu-bullet-dot">
                           <span />
@@ -123,13 +123,13 @@ export function AsideMenuList({ layoutProps }) {
  {/*Category child2::3 Level*/}
               <li
                       className={`menu-item ${getMenuItemActive(
-                        "/google-material/inputs/checkboxes"
+                        "/category/categorylist"
                       )}`}
                       aria-haspopup="true"
                     >
                       <NavLink
                         className="menu-link"
-                        to="/google-material/inputs/checkboxes"
+                        to="/category/categorylist"
                       >
                         <i className="menu-bullet menu-bullet-dot">
                           <span />

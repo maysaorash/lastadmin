@@ -1,15 +1,68 @@
 import React from "react";
 
-export function Comment({ className }) {
+export function AddCategory({ className }) {
  
 
   return (
     <>
+    
+<Form>
+  <Form.Row>
+    <Form.Group as={Col} controlId="formGridEmail">
+      <Form.Label>Email</Form.Label>
+      <Form.Control type="email" placeholder="Enter email" />
+    </Form.Group>
+
+    <Form.Group as={Col} controlId="formGridPassword">
+      <Form.Label>Password</Form.Label>
+      <Form.Control type="password" placeholder="Password" />
+    </Form.Group>
+  </Form.Row>
+
+  <Form.Group controlId="formGridAddress1">
+    <Form.Label>Address</Form.Label>
+    <Form.Control placeholder="1234 Main St" />
+  </Form.Group>
+
+  <Form.Group controlId="formGridAddress2">
+    <Form.Label>Address 2</Form.Label>
+    <Form.Control placeholder="Apartment, studio, or floor" />
+  </Form.Group>
+
+  <Form.Row>
+    <Form.Group as={Col} controlId="formGridCity">
+      <Form.Label>City</Form.Label>
+      <Form.Control />
+    </Form.Group>
+
+    <Form.Group as={Col} controlId="formGridState">
+      <Form.Label>State</Form.Label>
+      <Form.Control as="select">
+        <option>Choose...</option>
+        <option>...</option>
+      </Form.Control>
+    </Form.Group>
+
+    <Form.Group as={Col} controlId="formGridZip">
+      <Form.Label>Zip</Form.Label>
+      <Form.Control />
+    </Form.Group>
+  </Form.Row>
+
+  <Form.Group id="formGridCheckbox">
+    <Form.Check type="checkbox" label="Check me out" />
+  </Form.Group>
+
+  <Button variant="primary" type="submit">
+    Submit
+  </Button>
+</Form>
+{/*     
     <div className="container">
       <div className="card card-custom gutter-b">
         <div className="card-header">
           <div className="card-title">
-            <h3 className="card-label">Comment Lists</h3>
+            <h3 className="card-label">Add Category</h3>
           </div>
           <div className="card-toolbar">
             {/* <button type="button" className="btn btn-primary">
@@ -321,7 +374,7 @@ export function Comment({ className }) {
                     aria-label="Type sortable"
                     className="sortable"
                   >
-                    Comment
+                    AddCategory
                     <span className="svg-icon svg-icon-sm svg-icon-primary ml-1 svg-icon-sort">
                       <svg
                         width="24px"
@@ -624,7 +677,7 @@ export function Comment({ className }) {
                   <td>Stodd</td>
                   <td>mstodd2@twitpic.com</td>
                   <td>Female</td>
-                  {/* <td>
+                  <td>
                     <span className="label label-lg label-light-danger label-inline">
                       Suspended
                     </span>
@@ -633,7 +686,7 @@ export function Comment({ className }) {
                     <span className="label label-dot label-primary mr-2" />
                     &nbsp;
                     <span className="font-bold font-primary">Individual</span>
-                  </td> */}
+                  </td>
                   <td className="text-right pr-0" style={{ minWidth: 100 }}>
                     <a
                       title="Edit customer"
@@ -744,7 +797,7 @@ export function Comment({ className }) {
                   <td>Galbreth</td>
                   <td>ngalbreth3@springer.com</td>
                   <td>Female</td>
-                  {/* <td>
+                  <td>
                     <span className="label label-lg label-light-info label-inline">
                       Pending
                     </span>
@@ -753,7 +806,7 @@ export function Comment({ className }) {
                     <span className="label label-dot label-success mr-2" />
                     &nbsp;
                     <span className="font-bold font-success">Business</span>
-                  </td> */}
+                  </td>
                   <td className="text-right pr-0" style={{ minWidth: 100 }}>
                     <a
                       title="Edit customer"
@@ -864,7 +917,7 @@ export function Comment({ className }) {
                   <td>Jandl</td>
                   <td>ajandl4@mapy.cz</td>
                   <td>Female</td>
-                  {/* <td>
+                  <td>
                     <span className="label label-lg label-light-success label-inline">
                       Active
                     </span>
@@ -873,7 +926,7 @@ export function Comment({ className }) {
                     <span className="label label-dot label-primary mr-2" />
                     &nbsp;
                     <span className="font-bold font-primary">Individual</span>
-                  </td> */}
+                  </td>
                   <td className="text-right pr-0" style={{ minWidth: 100 }}>
                     <a
                       title="Edit customer"
@@ -984,7 +1037,7 @@ export function Comment({ className }) {
                   <td>Duplan</td>
                   <td>mduplan5@msn.com</td>
                   <td>Female</td>
-                  {/* <td>
+                  <td>
                     <span className="label label-lg label-light-success label-inline">
                       Active
                     </span>
@@ -993,7 +1046,7 @@ export function Comment({ className }) {
                     <span className="label label-dot label-primary mr-2" />
                     &nbsp;
                     <span className="font-bold font-primary">Individual</span>
-                  </td> */}
+                  </td>
                   <td className="text-right pr-0" style={{ minWidth: 100 }}>
                     <a
                       title="Edit customer"
@@ -1104,7 +1157,7 @@ export function Comment({ className }) {
                   <td>Stow</td>
                   <td>dstow6@vistaprint.com</td>
                   <td>Male</td>
-                  {/* <td>
+                  <td>
                     <span className="label label-lg label-light-info label-inline">
                       Pending
                     </span>
@@ -1113,7 +1166,7 @@ export function Comment({ className }) {
                     <span className="label label-dot label-primary mr-2" />
                     &nbsp;
                     <span className="font-bold font-primary">Individual</span>
-                  </td> */}
+                  </td>
                   <td className="text-right pr-0" style={{ minWidth: 100 }}>
                     <a
                       title="Edit customer"
@@ -1224,7 +1277,7 @@ export function Comment({ className }) {
                   <td>Dering</td>
                   <td>bdering7@europa.eu</td>
                   <td>Male</td>
-                  {/* <td>
+                  <td>
                     <span className="label label-lg label-light-success label-inline">
                       Active
                     </span>
@@ -1233,7 +1286,7 @@ export function Comment({ className }) {
                     <span className="label label-dot label-success mr-2" />
                     &nbsp;
                     <span className="font-bold font-success">Business</span>
-                  </td> */}
+                  </td>
                   <td className="text-right pr-0" style={{ minWidth: 100 }}>
                     <a
                       title="Edit customer"
@@ -1344,7 +1397,7 @@ export function Comment({ className }) {
                   <td>Blackaller</td>
                   <td>wblackaller8@biblegateway.com</td>
                   <td>Male</td>
-                  {/* <td>
+                  <td>
                     <span className="label label-lg label-light-danger label-inline">
                       Suspended
                     </span>
@@ -1353,7 +1406,7 @@ export function Comment({ className }) {
                     <span className="label label-dot label-success mr-2" />
                     &nbsp;
                     <span className="font-bold font-success">Business</span>
-                  </td> */}
+                  </td>
                   <td className="text-right pr-0" style={{ minWidth: 100 }}>
                     <a
                       title="Edit customer"
@@ -1464,7 +1517,7 @@ export function Comment({ className }) {
                   <td>Hurtic</td>
                   <td>ahurtic9@friendfeed.com</td>
                   <td>Male</td>
-                  {/* <td>
+                  <td>
                     <span className="label label-lg label-light-success label-inline">
                       Active
                     </span>
@@ -1473,7 +1526,7 @@ export function Comment({ className }) {
                     <span className="label label-dot label-success mr-2" />
                     &nbsp;
                     <span className="font-bold font-success">Business</span>
-                  </td> */}
+                  </td>
                   <td className="text-right pr-0" style={{ minWidth: 100 }}>
                     <a
                       title="Edit customer"
@@ -1623,7 +1676,7 @@ export function Comment({ className }) {
           </div>
         </div>
       </div>
-    </div>
+    </div> */}
     </>
   );
 }
