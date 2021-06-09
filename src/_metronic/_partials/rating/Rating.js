@@ -1021,7 +1021,11 @@
 
 
 
+
 import React from "react";
+
+import VisibilityIcon from "@material-ui/icons/Visibility";
+
 
 export function Rating({ className }) {
  
@@ -1402,6 +1406,7 @@ export function Rating({ className }) {
                     <span className="font-bold font-primary">Individual</span>
                   </td>
                   <td className="text-right pr-0" style={{ minWidth: 100 }}>
+                  <VisibilityIcon style={{color:"orange"}} />
                     <a
                       title="Edit customer"
                       className="btn btn-icon btn-light btn-hover-primary btn-sm mx-3"
@@ -1522,6 +1527,7 @@ export function Rating({ className }) {
                     <span className="font-bold font-primary">Individual</span>
                   </td>
                   <td className="text-right pr-0" style={{ minWidth: 100 }}>
+                  <VisibilityIcon style={{color:"orange"}} />
                     <a
                       title="Edit customer"
                       className="btn btn-icon btn-light btn-hover-primary btn-sm mx-3"
@@ -1642,6 +1648,7 @@ export function Rating({ className }) {
                     <span className="font-bold font-primary">Individual</span>
                   </td>
                   <td className="text-right pr-0" style={{ minWidth: 100 }}>
+                  <VisibilityIcon style={{color:"orange"}} />
                     <a
                       title="Edit customer"
                       className="btn btn-icon btn-light btn-hover-primary btn-sm mx-3"
@@ -1762,6 +1769,7 @@ export function Rating({ className }) {
                     <span className="font-bold font-success">Business</span>
                   </td>
                   <td className="text-right pr-0" style={{ minWidth: 100 }}>
+                  <VisibilityIcon style={{color:"orange"}} />
                     <a
                       title="Edit customer"
                       className="btn btn-icon btn-light btn-hover-primary btn-sm mx-3"
@@ -1882,6 +1890,7 @@ export function Rating({ className }) {
                     <span className="font-bold font-primary">Individual</span>
                   </td>
                   <td className="text-right pr-0" style={{ minWidth: 100 }}>
+                  <VisibilityIcon style={{color:"orange"}} />
                     <a
                       title="Edit customer"
                       className="btn btn-icon btn-light btn-hover-primary btn-sm mx-3"
@@ -2002,6 +2011,7 @@ export function Rating({ className }) {
                     <span className="font-bold font-primary">Individual</span>
                   </td>
                   <td className="text-right pr-0" style={{ minWidth: 100 }}>
+                  <VisibilityIcon style={{color:"orange"}} />
                     <a
                       title="Edit customer"
                       className="btn btn-icon btn-light btn-hover-primary btn-sm mx-3"
@@ -2122,6 +2132,7 @@ export function Rating({ className }) {
                     <span className="font-bold font-primary">Individual</span>
                   </td>
                   <td className="text-right pr-0" style={{ minWidth: 100 }}>
+                  <VisibilityIcon style={{color:"orange"}} />
                     <a
                       title="Edit customer"
                       className="btn btn-icon btn-light btn-hover-primary btn-sm mx-3"
@@ -2242,6 +2253,7 @@ export function Rating({ className }) {
                     <span className="font-bold font-success">Business</span>
                   </td>
                   <td className="text-right pr-0" style={{ minWidth: 100 }}>
+                  <VisibilityIcon style={{color:"orange"}} />
                     <a
                       title="Edit customer"
                       className="btn btn-icon btn-light btn-hover-primary btn-sm mx-3"
@@ -2362,6 +2374,7 @@ export function Rating({ className }) {
                     <span className="font-bold font-success">Business</span>
                   </td>
                   <td className="text-right pr-0" style={{ minWidth: 100 }}>
+                  <VisibilityIcon style={{color:"orange"}} />
                     <a
                       title="Edit customer"
                       className="btn btn-icon btn-light btn-hover-primary btn-sm mx-3"
@@ -2482,6 +2495,7 @@ export function Rating({ className }) {
                     <span className="font-bold font-success">Business</span>
                   </td>
                   <td className="text-right pr-0" style={{ minWidth: 100 }}>
+                  <VisibilityIcon style={{color:"orange"}} />
                     <a
                       title="Edit customer"
                       className="btn btn-icon btn-light btn-hover-primary btn-sm mx-3"

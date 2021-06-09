@@ -1,6 +1,7 @@
 import React from "react";
 // import { FormControl, Form, Button } from "react-bootstrap";
 // import { ArrowUp, ArrowDown } from "react-bootstrap-icons";
+import VisibilityIcon from "@material-ui/icons/Visibility";
 
 
 export function CategoryList({ className }) {
@@ -535,8 +536,9 @@ export function CategoryList({ className }) {
                     &nbsp;
                     <span className="font-bold font-primary">Individual</span>
                   </td> */}
-                 
+               
                   <td className="text-right pr-0" style={{ minWidth: 100 }}>
+                  <VisibilityIcon style={{color:"orange"}} />
                     <a
                       title="Edit customer"
                       className="btn btn-icon btn-light btn-hover-primary btn-sm mx-3"
@@ -652,6 +654,7 @@ export function CategoryList({ className }) {
                     <span className="font-bold font-primary">Individual</span>
                   </td> */}
                   <td className="text-right pr-0" style={{ minWidth: 100 }}>
+                  <VisibilityIcon style={{color:"orange"}} />
                     <a
                       title="Edit customer"
                       className="btn btn-icon btn-light btn-hover-primary btn-sm mx-3"
@@ -766,6 +769,7 @@ export function CategoryList({ className }) {
                     <span className="font-bold font-primary">Individual</span>
                   </td> */}
                   <td className="text-right pr-0" style={{ minWidth: 100 }}>
+                  <VisibilityIcon style={{color:"orange"}} />
                     <a
                       title="Edit customer"
                       className="btn btn-icon btn-light btn-hover-primary btn-sm mx-3"
@@ -880,6 +884,7 @@ export function CategoryList({ className }) {
                     <span className="font-bold font-success">Business</span>
                   </td> */}
                   <td className="text-right pr-0" style={{ minWidth: 100 }}>
+                  <VisibilityIcon style={{color:"orange"}} />
                     <a
                       title="Edit customer"
                       className="btn btn-icon btn-light btn-hover-primary btn-sm mx-3"
@@ -994,6 +999,7 @@ export function CategoryList({ className }) {
                     <span className="font-bold font-primary">Individual</span>
                   </td> */}
                   <td className="text-right pr-0" style={{ minWidth: 100 }}>
+                  <VisibilityIcon style={{color:"orange"}} />
                     <a
                       title="Edit customer"
                       className="btn btn-icon btn-light btn-hover-primary btn-sm mx-3"
@@ -1108,6 +1114,7 @@ export function CategoryList({ className }) {
                     <span className="font-bold font-primary">Individual</span>
                   </td> */}
                   <td className="text-right pr-0" style={{ minWidth: 100 }}>
+                  <VisibilityIcon style={{color:"orange"}} />
                     <a
                       title="Edit customer"
                       className="btn btn-icon btn-light btn-hover-primary btn-sm mx-3"
@@ -1222,6 +1229,7 @@ export function CategoryList({ className }) {
                     <span className="font-bold font-primary">Individual</span>
                   </td> */}
                   <td className="text-right pr-0" style={{ minWidth: 100 }}>
+                  <VisibilityIcon style={{color:"orange"}} />
                     <a
                       title="Edit customer"
                       className="btn btn-icon btn-light btn-hover-primary btn-sm mx-3"
@@ -1336,6 +1344,7 @@ export function CategoryList({ className }) {
                     <span className="font-bold font-success">Business</span>
                   </td> */}
                   <td className="text-right pr-0" style={{ minWidth: 100 }}>
+                  <VisibilityIcon style={{color:"orange"}} />
                     <a
                       title="Edit customer"
                       className="btn btn-icon btn-light btn-hover-primary btn-sm mx-3"
@@ -1450,6 +1459,7 @@ export function CategoryList({ className }) {
                     <span className="font-bold font-success">Business</span>
                   </td> */}
                   <td className="text-right pr-0" style={{ minWidth: 100 }}>
+                  <VisibilityIcon style={{color:"orange"}} />
                     <a
                       title="Edit customer"
                       className="btn btn-icon btn-light btn-hover-primary btn-sm mx-3"
@@ -1564,6 +1574,7 @@ export function CategoryList({ className }) {
                     <span className="font-bold font-success">Business</span>
                   </td> */}
                   <td className="text-right pr-0" style={{ minWidth: 100 }}>
+                  <VisibilityIcon style={{color:"orange"}} />
                     <a
                       title="Edit customer"
                       className="btn btn-icon btn-light btn-hover-primary btn-sm mx-3"
