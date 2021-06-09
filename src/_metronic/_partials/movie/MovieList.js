@@ -1,7 +1,9 @@
-
 import React from "react";
+// import { FormControl, Form, Button } from "react-bootstrap";
+// import { ArrowUp, ArrowDown } from "react-bootstrap-icons";
 
-export function CategoryList({ className }) {
+
+export function MovieList({ className }) {
  
 
   return (
@@ -10,80 +12,64 @@ export function CategoryList({ className }) {
       <div className="card card-custom gutter-b">
         <div className="card-header">
           <div className="card-title">
-            <h3 className="card-label">Category Lists</h3>
+            <h3 className="card-label"><b>Category Lists</b></h3>
           </div>
           <div className="card-toolbar">
-            {/* <button type="button" className="btn btn-primary">
-              New Customer
-            </button> */}
+            <button type="submit" className="btn btn-primary">
+              Add Category
+            </button>
           </div>
         </div>
         <div className="card-body">
+{/*           
           <form className="form form-label-right">
             <div className="form-group row">
-              <div className="col-lg-2">
-                <select
-                  className="form-control"
-                  name="status"
-                  placeholder="Filter by Status"
-                >
-                  <option value>All</option>
-                  <option value={0}>Suspended</option>
-                  <option value={1}>Active</option>
-                  <option value={2}>Pending</option>
-                </select>
-                <small className="form-text text-muted">
-                  <b>Filter</b> by Status
-                </small>
+
+              <div className="row-lg-2">
+                <label >
+                  <b>Show:</b> 
+                </label>
+                <input type="number"/>
+                <label><b>entries</b></label>
               </div>
-              <div className="col-lg-2">
-                <select
-                  className="form-control"
-                  placeholder="Filter by Type"
-                  name="type"
-                >
-                  <option value>All</option>
-                  <option value={0}>Business</option>
-                  <option value={1}>Individual</option>
-                </select>
-                <small className="form-text text-muted">
-                  <b>Filter</b> by Type
-                </small>
+        
+             <div className="col-lg-2">
+              <label className="form-text ">
+                  <b>Search:</b> 
+                </label>
+                <input />
               </div>
-              <div className="col-lg-2">
-                <input
-                  type="text"
-                  className="form-control"
-                  name="searchText"
-                  placeholder="Search"
-                  defaultValue
-                />
-                <small className="form-text text-muted">
-                  <b>Search</b> in all fields
-                </small>
-              </div>
+        
             </div>
+           
           </form>
+     */}
+          <div className="row">
+            <div className="col-sm-12 col-md-6">
+              <div className="dataTables_length" id="DataTables_Table_0_length">
+                <label><b>Show <select name="DataTables_Table_0_length" aria-controls="DataTables_Table_0" className="custom-select custom-select-sm form-control form-control-sm"><option value="3">3</option><option value="5">5</option><option value="10">10</option>
+                </select> entries</b></label>
+              </div>
+              </div>
+              
+          <div className="col-sm-12 col-md-6">
+              <div id="DataTables_Table_0_filter" className="dataTables_filter">
+                <label>Search:
+                  <input type="search" className="form-control form-control-sm" placeholder="" aria-controls="DataTables_Table_0" />
+              </label></div></div></div>
+
           <div className="react-bootstrap-table table-responsive">
             <table className="table table table-head-custom table-vertical-center overflow-hidden">
               <thead>
                 <tr>
-                  <th
-                    className="selection-cell-header"
-                    data-row-selection="true"
-                  >
-                    <input type="checkbox" style={{ display: "none" }} />
-                    <label className="checkbox checkbox-single">
-                      <input type="checkbox" />
-                      <span />
-                    </label>
-                  </th>
+                  
                   <th
                     tabIndex={0}
                     aria-label="ID sort asc"
                     className="sortable sortable-active"
                   >
-                    ID
+                    NO
+                    
                     <span className="svg-icon svg-icon-sm svg-icon-primary ml-1">
                       <svg
                         width="24px"
@@ -123,14 +109,59 @@ export function CategoryList({ className }) {
                         </g>
                       </svg>
                     </span>
+                  
                   </th>
                   <th
                     tabIndex={0}
                     aria-label="Firstname sortable"
                     className="sortable"
                   >
-                    Category
-                    <span className="svg-icon svg-icon-sm svg-icon-primary ml-1 svg-icon-sort">
+                    NAME
+
+                    <span className="svg-icon svg-icon-sm svg-icon-primary ml-1">
+                      <svg
+                        width="24px"
+                        height="24px"
+                        viewBox="0 0 24 24"
+                        version="1.1"
+                        xmlns="http://www.w3.org/2000/svg"
+                        xmlnsXlink="http://www.w3.org/1999/xlink"
+                      >
+                        <title>Stockholm-icons / Navigation / Up-2</title>
+                        <desc>Created with Sketch.</desc>
+                        <defs />
+                        <g
+                          id="Stockholm-icons-/-Navigation-/-Up-2"
+                          stroke="none"
+                          strokeWidth={1}
+                          fill="none"
+                          fillRule="evenodd"
+                        >
+                          <polygon id="Shape" points="0 0 24 0 24 24 0 24" />
+                          <rect
+                            id="Rectangle"
+                            fill="#000000"
+                            opacity="0.3"
+                            x={11}
+                            y={10}
+                            width={2}
+                            height={10}
+                            rx={1}
+                          />
+                          <path
+                            d="M6.70710678,12.7071068 C6.31658249,13.0976311 5.68341751,13.0976311 5.29289322,12.7071068 C4.90236893,12.3165825 4.90236893,11.6834175 5.29289322,11.2928932 L11.2928932,5.29289322 C11.6714722,4.91431428 12.2810586,4.90106866 12.6757246,5.26284586 L18.6757246,10.7628459 C19.0828436,11.1360383 19.1103465,11.7686056 18.7371541,12.1757246 C18.3639617,12.5828436 17.7313944,12.6103465 17.3242754,12.2371541 L12.0300757,7.38413782 L6.70710678,12.7071068 Z"
+                            id="Path-94"
+                            fill="#000000"
+                            fillRule="nonzero"
+                          />
+                        </g>
+                      </svg>
+                    </span>
+
+                    {/* <ArrowUp/>
+                    <ArrowDown/> */}
+{/* 
+                    <span className="svg-icon svg-icon-sm svg-icon-primary ml-1">
                       <svg
                         width="24px"
                         height="24px"
@@ -168,13 +199,15 @@ export function CategoryList({ className }) {
                         </g>
                       </svg>
                     </span>
+                   */}
                   </th>
+{/*                   
                   <th
                     tabIndex={0}
                     aria-label="Lastname sortable"
                     className="sortable"
                   >
-                    Name
+                    AUTHOR
                     <span className="svg-icon svg-icon-sm svg-icon-primary ml-1 svg-icon-sort">
                       <svg
                         width="24px"
@@ -214,12 +247,56 @@ export function CategoryList({ className }) {
                       </svg>
                     </span>
                   </th>
+                  */}
                   <th
                     tabIndex={0}
                     aria-label="Email sortable"
                     className="sortable"
+                    style={{textAlign:"center"}}
                   >
                     Description
+
+                    <span className="svg-icon svg-icon-sm svg-icon-primary ml-1">
+                      <svg
+                        width="24px"
+                        height="24px"
+                        viewBox="0 0 24 24"
+                        version="1.1"
+                        xmlns="http://www.w3.org/2000/svg"
+                        xmlnsXlink="http://www.w3.org/1999/xlink"
+                      >
+                        <title>Stockholm-icons / Navigation / Up-2</title>
+                        <desc>Created with Sketch.</desc>
+                        <defs />
+                        <g
+                          id="Stockholm-icons-/-Navigation-/-Up-2"
+                          stroke="none"
+                          strokeWidth={1}
+                          fill="none"
+                          fillRule="evenodd"
+                        >
+                          <polygon id="Shape" points="0 0 24 0 24 24 0 24" />
+                          <rect
+                            id="Rectangle"
+                            fill="#000000"
+                            opacity="0.3"
+                            x={11}
+                            y={10}
+                            width={2}
+                            height={10}
+                            rx={1}
+                          />
+                          <path
+                            d="M6.70710678,12.7071068 C6.31658249,13.0976311 5.68341751,13.0976311 5.29289322,12.7071068 C4.90236893,12.3165825 4.90236893,11.6834175 5.29289322,11.2928932 L11.2928932,5.29289322 C11.6714722,4.91431428 12.2810586,4.90106866 12.6757246,5.26284586 L18.6757246,10.7628459 C19.0828436,11.1360383 19.1103465,11.7686056 18.7371541,12.1757246 C18.3639617,12.5828436 17.7313944,12.6103465 17.3242754,12.2371541 L12.0300757,7.38413782 L6.70710678,12.7071068 Z"
+                            id="Path-94"
+                            fill="#000000"
+                            fillRule="nonzero"
+                          />
+                        </g>
+                      </svg>
+                    </span>
+
+{/* 
                     <span className="svg-icon svg-icon-sm svg-icon-primary ml-1 svg-icon-sort">
                       <svg
                         width="24px"
@@ -258,14 +335,57 @@ export function CategoryList({ className }) {
                         </g>
                       </svg>
                     </span>
+                  */}
                   </th>
-                  <th tabIndex={0}>Release Date</th>
-                  <th
+                  <th tabIndex={0}>MOVIE
+                  
+                  <span className="svg-icon svg-icon-sm svg-icon-primary ml-1">
+                      <svg
+                        width="24px"
+                        height="24px"
+                        viewBox="0 0 24 24"
+                        version="1.1"
+                        xmlns="http://www.w3.org/2000/svg"
+                        xmlnsXlink="http://www.w3.org/1999/xlink"
+                      >
+                        <title>Stockholm-icons / Navigation / Up-2</title>
+                        <desc>Created with Sketch.</desc>
+                        <defs />
+                        <g
+                          id="Stockholm-icons-/-Navigation-/-Up-2"
+                          stroke="none"
+                          strokeWidth={1}
+                          fill="none"
+                          fillRule="evenodd"
+                        >
+                          <polygon id="Shape" points="0 0 24 0 24 24 0 24" />
+                          <rect
+                            id="Rectangle"
+                            fill="#000000"
+                            opacity="0.3"
+                            x={11}
+                            y={10}
+                            width={2}
+                            height={10}
+                            rx={1}
+                          />
+                          <path
+                            d="M6.70710678,12.7071068 C6.31658249,13.0976311 5.68341751,13.0976311 5.29289322,12.7071068 C4.90236893,12.3165825 4.90236893,11.6834175 5.29289322,11.2928932 L11.2928932,5.29289322 C11.6714722,4.91431428 12.2810586,4.90106866 12.6757246,5.26284586 L18.6757246,10.7628459 C19.0828436,11.1360383 19.1103465,11.7686056 18.7371541,12.1757246 C18.3639617,12.5828436 17.7313944,12.6103465 17.3242754,12.2371541 L12.0300757,7.38413782 L6.70710678,12.7071068 Z"
+                            id="Path-94"
+                            fill="#000000"
+                            fillRule="nonzero"
+                          />
+                        </g>
+                      </svg>
+                    </span>
+                  </th>
+
+                  {/* <th
                     tabIndex={0}
                     aria-label="Status sortable"
                     className="sortable"
                   >
-                    Status
+                    ACTION
                     <span className="svg-icon svg-icon-sm svg-icon-primary ml-1 svg-icon-sort">
                       <svg
                         width="24px"
@@ -310,7 +430,7 @@ export function CategoryList({ className }) {
                     aria-label="Type sortable"
                     className="sortable"
                   >
-                    Category
+                    CategoryList
                     <span className="svg-icon svg-icon-sm svg-icon-primary ml-1 svg-icon-sort">
                       <svg
                         width="24px"
@@ -350,35 +470,72 @@ export function CategoryList({ className }) {
                       </svg>
                     </span>
                   </th>
+                   */}
                   <th tabIndex={0} className="text-right pr-3">
-                    Actions
+                    ACTION
+                    <span className="svg-icon svg-icon-sm svg-icon-primary ml-1">
+                      <svg
+                        width="24px"
+                        height="24px"
+                        viewBox="0 0 24 24"
+                        version="1.1"
+                        xmlns="http://www.w3.org/2000/svg"
+                        xmlnsXlink="http://www.w3.org/1999/xlink"
+                      >
+                        <title>Stockholm-icons / Navigation / Up-2</title>
+                        <desc>Created with Sketch.</desc>
+                        <defs />
+                        <g
+                          id="Stockholm-icons-/-Navigation-/-Up-2"
+                          stroke="none"
+                          strokeWidth={1}
+                          fill="none"
+                          fillRule="evenodd"
+                        >
+                          <polygon id="Shape" points="0 0 24 0 24 24 0 24" />
+                          <rect
+                            id="Rectangle"
+                            fill="#000000"
+                            opacity="0.3"
+                            x={11}
+                            y={10}
+                            width={2}
+                            height={10}
+                            rx={1}
+                          />
+                          <path
+                            d="M6.70710678,12.7071068 C6.31658249,13.0976311 5.68341751,13.0976311 5.29289322,12.7071068 C4.90236893,12.3165825 4.90236893,11.6834175 5.29289322,11.2928932 L11.2928932,5.29289322 C11.6714722,4.91431428 12.2810586,4.90106866 12.6757246,5.26284586 L18.6757246,10.7628459 C19.0828436,11.1360383 19.1103465,11.7686056 18.7371541,12.1757246 C18.3639617,12.5828436 17.7313944,12.6103465 17.3242754,12.2371541 L12.0300757,7.38413782 L6.70710678,12.7071068 Z"
+                            id="Path-94"
+                            fill="#000000"
+                            fillRule="nonzero"
+                          />
+                        </g>
+                      </svg>
+                    </span>
                   </th>
                 </tr>
               </thead>
               <tbody>
                 <tr>
-                  <td className="selection-cell">
-                    <input type="checkbox" style={{ display: "none" }} />
-                    <label className="checkbox checkbox-single">
-                      <input type="checkbox" />
-                      <span />
-                    </label>
-                  </td>
+                
                   <td>1</td>
                   <td>Sonni</td>
-                  <td>Gabotti</td>
-                  <td>sgabotti0@wsj.com</td>
-                  <td>Female</td>
-                  <td>
+                  {/* <td>Gabotti</td> */}
+                  
+                  <td   style={{textAlign:"center"}}  style={{textAlign:"center"}}>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed rhoncus non elit a...</td>
+                  <td>20</td>
+
+                  {/* <td>
                     <span className="label label-lg label-light-danger label-inline">
                       Suspended
                     </span>
-                  </td>
-                  <td>
+                  </td> */}
+                  {/* <td>
                     <span className="label label-dot label-primary mr-2" />
                     &nbsp;
                     <span className="font-bold font-primary">Individual</span>
-                  </td>
+                  </td> */}
+                 
                   <td className="text-right pr-0" style={{ minWidth: 100 }}>
                     <a
                       title="Edit customer"
@@ -475,30 +632,25 @@ export function CategoryList({ className }) {
                       </span>
                     </a>
                   </td>
+                
                 </tr>
                 <tr>
-                  <td className="selection-cell">
-                    <input type="checkbox" style={{ display: "none" }} />
-                    <label className="checkbox checkbox-single">
-                      <input type="checkbox" />
-                      <span />
-                    </label>
-                  </td>
+                
                   <td>2</td>
                   <td>Abie</td>
-                  <td>Cowperthwaite</td>
-                  <td>acowperthwaite1@storify.com</td>
-                  <td>Male</td>
-                  <td>
+                  {/* <td>Cowperthwaite</td> */}
+                  <td  style={{textAlign:"center"}}>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed rhoncus non elit a...</td>
+                  <td>10</td>
+                  {/* <td>
                     <span className="label label-lg label-light-success label-inline">
                       Active
                     </span>
-                  </td>
-                  <td>
+                  </td> */}
+                  {/* <td>
                     <span className="label label-dot label-primary mr-2" />
                     &nbsp;
                     <span className="font-bold font-primary">Individual</span>
-                  </td>
+                  </td> */}
                   <td className="text-right pr-0" style={{ minWidth: 100 }}>
                     <a
                       title="Edit customer"
@@ -597,19 +749,13 @@ export function CategoryList({ className }) {
                   </td>
                 </tr>
                 <tr>
-                  <td className="selection-cell">
-                    <input type="checkbox" style={{ display: "none" }} />
-                    <label className="checkbox checkbox-single">
-                      <input type="checkbox" />
-                      <span />
-                    </label>
-                  </td>
+                 
                   <td>3</td>
                   <td>Melody</td>
-                  <td>Stodd</td>
-                  <td>mstodd2@twitpic.com</td>
-                  <td>Female</td>
-                  <td>
+                  {/* <td>Stodd</td> */}
+                  <td  style={{textAlign:"center"}}>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed rhoncus non elit a</td>
+                  <td>40</td>
+                  {/* <td>
                     <span className="label label-lg label-light-danger label-inline">
                       Suspended
                     </span>
@@ -618,7 +764,7 @@ export function CategoryList({ className }) {
                     <span className="label label-dot label-primary mr-2" />
                     &nbsp;
                     <span className="font-bold font-primary">Individual</span>
-                  </td>
+                  </td> */}
                   <td className="text-right pr-0" style={{ minWidth: 100 }}>
                     <a
                       title="Edit customer"
@@ -717,19 +863,13 @@ export function CategoryList({ className }) {
                   </td>
                 </tr>
                 <tr>
-                  <td className="selection-cell">
-                    <input type="checkbox" style={{ display: "none" }} />
-                    <label className="checkbox checkbox-single">
-                      <input type="checkbox" />
-                      <span />
-                    </label>
-                  </td>
+                
                   <td>4</td>
                   <td>Naomi</td>
-                  <td>Galbreth</td>
-                  <td>ngalbreth3@springer.com</td>
-                  <td>Female</td>
-                  <td>
+                  {/* <td>Galbreth</td> */}
+                  <td  style={{textAlign:"center"}}>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed rhoncus non elit a...</td>
+                  <td>30</td>
+                  {/* <td>
                     <span className="label label-lg label-light-info label-inline">
                       Pending
                     </span>
@@ -738,7 +878,7 @@ export function CategoryList({ className }) {
                     <span className="label label-dot label-success mr-2" />
                     &nbsp;
                     <span className="font-bold font-success">Business</span>
-                  </td>
+                  </td> */}
                   <td className="text-right pr-0" style={{ minWidth: 100 }}>
                     <a
                       title="Edit customer"
@@ -837,19 +977,13 @@ export function CategoryList({ className }) {
                   </td>
                 </tr>
                 <tr>
-                  <td className="selection-cell">
-                    <input type="checkbox" style={{ display: "none" }} />
-                    <label className="checkbox checkbox-single">
-                      <input type="checkbox" />
-                      <span />
-                    </label>
-                  </td>
+                 
                   <td>5</td>
                   <td>Ashley</td>
-                  <td>Jandl</td>
-                  <td>ajandl4@mapy.cz</td>
-                  <td>Female</td>
-                  <td>
+                  {/* <td>Jandl</td> */}
+                  <td  style={{textAlign:"center"}}>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed rhoncus non elit a...</td>
+                  <td>20</td>
+                  {/* <td>
                     <span className="label label-lg label-light-success label-inline">
                       Active
                     </span>
@@ -858,7 +992,7 @@ export function CategoryList({ className }) {
                     <span className="label label-dot label-primary mr-2" />
                     &nbsp;
                     <span className="font-bold font-primary">Individual</span>
-                  </td>
+                  </td> */}
                   <td className="text-right pr-0" style={{ minWidth: 100 }}>
                     <a
                       title="Edit customer"
@@ -957,19 +1091,13 @@ export function CategoryList({ className }) {
                   </td>
                 </tr>
                 <tr>
-                  <td className="selection-cell">
-                    <input type="checkbox" style={{ display: "none" }} />
-                    <label className="checkbox checkbox-single">
-                      <input type="checkbox" />
-                      <span />
-                    </label>
-                  </td>
+                 
                   <td>6</td>
                   <td>Mildrid</td>
-                  <td>Duplan</td>
-                  <td>mduplan5@msn.com</td>
-                  <td>Female</td>
-                  <td>
+                  {/* <td>Duplan</td> */}
+                  <td  style={{textAlign:"center"}}>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed rhoncus non elit a...</td>
+                  <td>10</td>
+                  {/* <td>
                     <span className="label label-lg label-light-success label-inline">
                       Active
                     </span>
@@ -978,7 +1106,7 @@ export function CategoryList({ className }) {
                     <span className="label label-dot label-primary mr-2" />
                     &nbsp;
                     <span className="font-bold font-primary">Individual</span>
-                  </td>
+                  </td> */}
                   <td className="text-right pr-0" style={{ minWidth: 100 }}>
                     <a
                       title="Edit customer"
@@ -1077,19 +1205,13 @@ export function CategoryList({ className }) {
                   </td>
                 </tr>
                 <tr>
-                  <td className="selection-cell">
-                    <input type="checkbox" style={{ display: "none" }} />
-                    <label className="checkbox checkbox-single">
-                      <input type="checkbox" />
-                      <span />
-                    </label>
-                  </td>
+                 
                   <td>7</td>
                   <td>Dall</td>
-                  <td>Stow</td>
-                  <td>dstow6@vistaprint.com</td>
-                  <td>Male</td>
-                  <td>
+                  {/* <td>Stow</td> */}
+                  <td  style={{textAlign:"center"}}>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed rhoncus non elit a...</td>
+                  <td>20</td>
+                  {/* <td>
                     <span className="label label-lg label-light-info label-inline">
                       Pending
                     </span>
@@ -1098,7 +1220,7 @@ export function CategoryList({ className }) {
                     <span className="label label-dot label-primary mr-2" />
                     &nbsp;
                     <span className="font-bold font-primary">Individual</span>
-                  </td>
+                  </td> */}
                   <td className="text-right pr-0" style={{ minWidth: 100 }}>
                     <a
                       title="Edit customer"
@@ -1197,19 +1319,13 @@ export function CategoryList({ className }) {
                   </td>
                 </tr>
                 <tr>
-                  <td className="selection-cell">
-                    <input type="checkbox" style={{ display: "none" }} />
-                    <label className="checkbox checkbox-single">
-                      <input type="checkbox" />
-                      <span />
-                    </label>
-                  </td>
+                 
                   <td>8</td>
                   <td>Burton</td>
-                  <td>Dering</td>
-                  <td>bdering7@europa.eu</td>
-                  <td>Male</td>
-                  <td>
+                  {/* <td>Dering</td> */}
+                  <td  style={{textAlign:"center"}}>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed rhoncus non elit a..</td>
+                  <td>40</td>
+                  {/* <td>
                     <span className="label label-lg label-light-success label-inline">
                       Active
                     </span>
@@ -1218,7 +1334,7 @@ export function CategoryList({ className }) {
                     <span className="label label-dot label-success mr-2" />
                     &nbsp;
                     <span className="font-bold font-success">Business</span>
-                  </td>
+                  </td> */}
                   <td className="text-right pr-0" style={{ minWidth: 100 }}>
                     <a
                       title="Edit customer"
@@ -1317,19 +1433,13 @@ export function CategoryList({ className }) {
                   </td>
                 </tr>
                 <tr>
-                  <td className="selection-cell">
-                    <input type="checkbox" style={{ display: "none" }} />
-                    <label className="checkbox checkbox-single">
-                      <input type="checkbox" />
-                      <span />
-                    </label>
-                  </td>
+               
                   <td>9</td>
                   <td>Wolf</td>
-                  <td>Blackaller</td>
-                  <td>wblackaller8@biblegateway.com</td>
-                  <td>Male</td>
-                  <td>
+                  {/* <td>Blackaller</td> */}
+                  <td  style={{textAlign:"center"}}>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed rhoncus non elit a...</td>
+                  <td>20</td>
+                  {/* <td>
                     <span className="label label-lg label-light-danger label-inline">
                       Suspended
                     </span>
@@ -1338,7 +1448,7 @@ export function CategoryList({ className }) {
                     <span className="label label-dot label-success mr-2" />
                     &nbsp;
                     <span className="font-bold font-success">Business</span>
-                  </td>
+                  </td> */}
                   <td className="text-right pr-0" style={{ minWidth: 100 }}>
                     <a
                       title="Edit customer"
@@ -1437,19 +1547,13 @@ export function CategoryList({ className }) {
                   </td>
                 </tr>
                 <tr>
-                  <td className="selection-cell">
-                    <input type="checkbox" style={{ display: "none" }} />
-                    <label className="checkbox checkbox-single">
-                      <input type="checkbox" />
-                      <span />
-                    </label>
-                  </td>
+                  
                   <td>10</td>
                   <td>Adham</td>
-                  <td>Hurtic</td>
-                  <td>ahurtic9@friendfeed.com</td>
-                  <td>Male</td>
-                  <td>
+                  {/* <td>Hurtic</td> */}
+                  <td  style={{textAlign:"center"}}>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed rhoncus non elit a...</td>
+                  <td>20</td>
+                  {/* <td>
                     <span className="label label-lg label-light-success label-inline">
                       Active
                     </span>
@@ -1458,7 +1562,7 @@ export function CategoryList({ className }) {
                     <span className="label label-dot label-success mr-2" />
                     &nbsp;
                     <span className="font-bold font-success">Business</span>
-                  </td>
+                  </td> */}
                   <td className="text-right pr-0" style={{ minWidth: 100 }}>
                     <a
                       title="Edit customer"
@@ -1607,6 +1711,7 @@ export function CategoryList({ className }) {
             </div>
           </div>
         </div>
+      
       </div>
     </div>
     </>
