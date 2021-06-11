@@ -538,7 +538,7 @@ export function CategoryList({ className }) {
                   </td> */}
                
                   <td className="text-right pr-0" style={{ minWidth: 100 }}>
-                  <VisibilityIcon style={{color:"orange"}} />
+               <VisibilityIcon style={{color:"orange"}} />
                     <a
                       title="Edit customer"
                       className="btn btn-icon btn-light btn-hover-primary btn-sm mx-3"

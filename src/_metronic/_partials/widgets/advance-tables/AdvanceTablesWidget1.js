@@ -1,4 +1,4 @@
-/* eslint-disable no-script-url,jsx-a11y/anchor-is-valid */
+
 import React from "react";
 import SVG from "react-inlinesvg";
 import { toAbsoluteUrl } from "../../../_helpers";
@@ -22,12 +22,14 @@ export function AdvanceTablesWidget1({ className }) {
             className="btn btn-success font-weight-bolder font-size-sm"
           >
             <span className="svg-icon svg-icon-md svg-icon-white">
-              <SVG
+            <img  src="../../images/lastNight.png" className="h-100 w-100 align-self-end" alt="lastNight" />
+
+              {/* <SVG
                 src={toAbsoluteUrl(
                   "/media/svg/icons/Communication/Add-user.svg"
                 )}
                 className="h-50 align-self-center"
-              ></SVG>
+              ></SVG> */}
             </span>
             Add New Member
           </a>
@@ -127,11 +129,13 @@ export function AdvanceTablesWidget1({ className }) {
                     className="btn btn-icon btn-light btn-hover-primary btn-sm"
                   >
                     <span className="svg-icon svg-icon-md svg-icon-primary">
-                      <SVG
+                    <img  src=".././images/lastNight.png" className="h-100 w-100 align-self-end" alt="lastNight" />
+
+                      {/* <SVG
                         src={toAbsoluteUrl(
                           "/media/svg/icons/General/Settings-1.svg"
                         )}
-                      ></SVG>
+                      ></SVG> */}
                     </span>
                   </a>
                   <a

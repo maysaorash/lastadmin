@@ -1,5 +1,5 @@
-/* eslint-disable react/jsx-no-undef */
-/* eslint-disable no-script-url,jsx-a11y/anchor-is-valid */
+// /* eslint-disable react/jsx-no-undef */
+// /* eslint-disable no-script-url,jsx-a11y/anchor-is-valid */
 import React, {useMemo, useEffect} from "react";
 import SVG from "react-inlinesvg";
 import objectPath from "object-path";
